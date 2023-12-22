@@ -3,6 +3,8 @@ import Menu from './Components/Menu'
 import NewsGrid from './Components/NewsGrid'
 
 
+
+
 function App() {
   const [items, setItems ] = useState([])
   const [active, setActive] = useState (1)
@@ -16,9 +18,10 @@ function App() {
 
   return (
     <div className="App">
-       <h1 className="title">misco <span>NEWS</span></h1>
+       <h1 className="title">MUSCO NEWS</h1>
        <Menu active={active} setActive={setActive} setCategory={setCategory}/>
        <NewsGrid items={items}/>
+       
       
     </div>
     
