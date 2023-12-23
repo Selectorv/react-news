@@ -14,19 +14,20 @@ function Menu({active, setActive, setCategory}) {
         setCategory(value)
     }
     return (
-        <nav className="menu">
-            <ul>
+        
+       <nav className="menu">
+              <ul>
                 {links.map(link => (
-                   <li
+                 <li
                    key={link.id}
-                   className={active === link.id ? "active" : "inactive"}
+                  className={active === link.id ? "active" : "inactive"}
                    onClick={() => onClick(link.id, link.value)}
                    >
-                    {link.name}
+                   {link.name}
                     </li>
-                ))}
+               ))}
             </ul>
-        </nav>
+       </nav>
     )
 }
 export default Menu

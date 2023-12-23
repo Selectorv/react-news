@@ -26,9 +26,8 @@ function NewsItem ({item}) {
                 </p>
                 <div className="article-details">
                 <small>{formatTime}</small>
-
-                </div>
             </div>
+        </div>
         </a>
     )   
 }

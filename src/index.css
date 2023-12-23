@@ -17,13 +17,8 @@ body{
   
   
 }
+
 .title span{
-background-color: green;
-color: white;
-
-
-}
-.title::first-letter{
   font-size: 45px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
@@ -66,7 +61,7 @@ color: white;
   padding: 2em;
 }
 .article{
-  background: #fff;
+  background: rgb(240, 239, 239);
   box-shadow: 0 0 5px rgb(121, 109, 109);
   width: 27em;
   border-radius: 8px;
@@ -123,6 +118,10 @@ color: white;
   color: #555;
   padding: 10px;
   margin-left: 5px;
+}
+.article-details{
+  padding: 20px;
+  color: #7a7979;
 }
 @media screen and (max-width:1330px){
   html{
