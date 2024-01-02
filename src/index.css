@@ -12,8 +12,9 @@ body{
   text-align: center;
   margin: 1em 0;
   font-size: 2em;
-  background-color: #fff;
-  color: green;
+  background-color: green;
+  color: rgb(252, 254, 252);
+  font-family: 'Big Shoulders';
   
   
   
@@ -21,18 +22,13 @@ body{
 
 .title span{
   font-size: 45px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Big Shoulders' Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
 }
 .menu{
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  overflow-y: auto;
-  overscroll-behavior-x:contain ;
-  scroll-snap-type: x mandatory;
-  gap: 10px;
-  
 }
 .menu li{
   display: inline-block;
@@ -133,17 +129,18 @@ body{
     font-size: 14px;
   }
   .news-grid{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr  1fr;
   }
 }
 @media screen and (max-width:900px){
   .news-grid{
     grid-template-columns: 1fr ;
   }
-  .menu li{
-    display: inline-flex;
+ .menu li{
+    display: inline-block;
     font-size: 16px;
     padding: 4px;
     line-height: 1;
   }
-}
+    
+  }
