@@ -7,7 +7,7 @@ function Menu({active, setActive, setCategory}) {
         {id:5, name:"Science", value:"science" },
         {id:6, name:"Sports", value:"sports" },
         {id:7, name:"Technology", value:"technology" },
-        {id:8, name:"video", value:"video"},
+        {id:8, name:"Live", value:"live"},
     ]
 
     function onClick(id, value){
