@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="App">
        <h1 className="title"><span>M</span>USCO <span>N</span>EWS</h1>
+       <img className="Advert" src=".\IMAGE\image 1.jpg" alt="MUSCO" />
        <Menu active={active} setActive={setActive} setCategory={setCategory}/>
        <NewsGrid items={items}/>
        

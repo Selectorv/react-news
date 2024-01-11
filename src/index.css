@@ -8,13 +8,18 @@ body{
   padding: 0.2em;
   background-color: rgb(240, 243, 243);
 }
-.title{
-  text-align: center;
+.App .title{
+  text-align: left;
   margin-top: 1em ;
+  padding-left: 20px;
   font-size: 2em;
-  background-color: green;
-  color: rgb(252, 254, 252);
-  font-family: 'Big Shoulders';  
+  background-image: linear-gradient(to right,rgb(1, 32, 1),green,rgb(1, 32, 1));
+  color: rgb(252, 254, 252);   
+}
+.App img .Advert{
+  align-items: right;
+  display: flex;
+  flex-direction: column;
 }
 
 .title span{
@@ -28,10 +33,11 @@ body{
   align-items: center;
   background-color: #fff;
   border-bottom: 1px #000;
+  margin-top: 0;
 }
 .menu li{
   display: inline-block;
-  margin: 0.2em;
+  margin: 0.1em;
   font-size: 1.2em;
   padding: 0.5em 1em;
   cursor: pointer;
@@ -131,7 +137,9 @@ body{
 }
 @media screen and (max-width:900px){
   .article{
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px 5px;
   }
   .news-grid{
     grid-template-columns: repeat(1, 1fr);
