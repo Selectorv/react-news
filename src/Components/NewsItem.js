@@ -13,17 +13,15 @@ function NewsItem ({item}) {
                 </div>
                 <div className="article-content">
                 <div className="article-source">
-                    <img src={`https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://${website}&size=16`} alt={item.source.id} />
-                <span>{item.source.name}</span>
-              </div>
+                    <img src={`https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://${website}&size=16`} alt={item.source.id}/>
+                    <span>{item.source.name}</span>
+           
+                </div>
 
-                <div className="article=title">
+                <div className="article-title">
                     <h2>{item.title}</h2>
                 </div>
 
-                <p className="article-description">
-                    {item.description}
-                </p>
                 <div className="article-details">
                 <small>{formatTime}</small>
             </div>
